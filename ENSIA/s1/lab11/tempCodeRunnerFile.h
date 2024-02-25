@@ -1,0 +1,1 @@
+            newArrayOfWords[k]=arrayOfWord[i];

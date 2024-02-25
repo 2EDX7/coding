@@ -1,0 +1,8 @@
+{
+  "C_Cpp.errorSquiggles": "disabled",
+  "files.associations": {
+    "*.html": "html",
+    "exception": "cpp",
+    "ostream": "cpp"
+  }
+}
