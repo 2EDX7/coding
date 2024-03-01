@@ -1,2 +1,1 @@
-tst = '12'
-print(tst.find(" "))
+print("helllo world! python is trash")
