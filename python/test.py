@@ -1,1 +1,0 @@
-print("helllo world! python is trash")

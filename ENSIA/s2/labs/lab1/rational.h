@@ -47,7 +47,7 @@ class rational{
             denominator = denominator*b.denominator;    
         }
 
-        void substract_rational(const rational& b){
+        void subtract_rational(const rational& b){
             numerator = numerator*b.denominator - denominator*b.numerator;
             denominator = denominator*b.denominator;    
         }

@@ -1,6 +1,4 @@
-#ifndef segment_h
-#define segment_h
-
+#pragma once
 #include "point.h"
 #include <iostream>
 
@@ -13,7 +11,5 @@ class segment{
         point getEnd()const;
         void  setStart(const point&);
         void  setEnd(const point&);
-        float  length();
+        rational  length();
 };
-
-#endif

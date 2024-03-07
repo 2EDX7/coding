@@ -4,7 +4,7 @@
 using namespace std;
 int main(){
     double oldSalary, newSalary, raiseAmount, raispercentage;
-    cout<<"enter your old salary in dolar: "; cin>>oldSalary;
+    cout<<"enter your old salary in dollar: "; cin>>oldSalary;
     cout<<"enter your raise percentage : "; cin>>raispercentage;
 
     raiseAmount= oldSalary*raispercentage;

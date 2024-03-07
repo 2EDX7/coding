@@ -1,5 +1,4 @@
-#ifndef point_h
-#define poinnt_h
+#pragma once
 
 #include "../../lab1/rational.h"
 #include "../../lab3/point/point.h"
@@ -15,5 +14,3 @@ class point{
         void setX(rational x);
         void setY(rational y);
 };
-
-#endif
