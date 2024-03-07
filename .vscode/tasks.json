@@ -8,8 +8,7 @@
 			"args": [
 				"-fdiagnostics-color=always",
 				"-g3",
-				"-Wall",
-				"${file}",
+				"*.cpp",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
 			],
