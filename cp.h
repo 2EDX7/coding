@@ -1,6 +1,6 @@
-#ifndef cp_h
-#define cp_h
+// This library contains many important libraries and it's name cp for competitive programming.
 
+#pragma once
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -12,5 +12,3 @@
 #include <map>
 #include <unordered_set>
 #include <unordered_map>
-
-#endif
