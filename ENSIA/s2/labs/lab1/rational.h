@@ -28,7 +28,8 @@ class rational{
 
         int get_numerator(void){ return numerator;}
         int get_denominator(void) {return denominator;}
-
+        float get_float_rep(void) {return numerator/denominator;}
+        
         void set_numerator(int n){ 
             if(n!=0 && gcd(n,denominator)!=1){
                 numerator = n/gcd(n,denominator);

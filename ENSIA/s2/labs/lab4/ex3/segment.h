@@ -11,5 +11,5 @@ class segment{
         point getEnd()const;
         void  setStart(const point&);
         void  setEnd(const point&);
-        rational  length();
+        float length();
 };

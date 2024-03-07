@@ -42,9 +42,9 @@ void IntegerSet::deleteElement(int d){
 }
 
 void IntegerSet::inputSet(std::vector<int> A){
-    for (int j = 0; j < A.size(); j++)
+    for (auto j:A)
     {
-        (A.at(j)>=0 and A.at(j)<100) ? set[j]=1 : set[j]=0;
+        (j>=0 and j<100) ? set[j]=1 : set[j]=0;
     }
 }
 

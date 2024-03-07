@@ -17,10 +17,10 @@ void  segment::setStart(const point& a){
 void  segment::setEnd(const point& b){
     end = b;
 }
-rational segment::length(){
-    rational x2 =  end.getX();
-    rational y2 =  end.getY();
-    rational x1 = start.getX();
-    rational y2 = start.getY();   
-    return sqrt(pow(x2.subtract_rational(x1), 2) + pow(y2 - y1, 2));
+float segment::length(){
+    float x2 =  (end.getX()).get_float_rep();
+    float y2 =  (end.getY()).get_float_rep();
+    float x1 = (start.getX()).get_float_rep();
+    float y1 = (start.getY()).get_float_rep();   
+    return sqrt(pow(x2-x1, 2) + pow(y2 - y1, 2));
 }
