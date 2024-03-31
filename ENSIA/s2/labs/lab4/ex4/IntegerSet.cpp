@@ -4,10 +4,6 @@
 using std::cout;
 using std::vector;
 
-
-IntegerSet::IntegerSet(){
-}
-
 IntegerSet::IntegerSet(vector<int> A){
     for (int j = 0; j < A.size(); j++)
     {
