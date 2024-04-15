@@ -49,10 +49,7 @@
         "streambuf": "cpp",
         "typeinfo": "cpp",
         "stack": "cpp",
-        "cstring": "cpp",
-        "ctime": "cpp",
-        "iomanip": "cpp",
-        "sstream": "cpp"
+        "cstring": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }
