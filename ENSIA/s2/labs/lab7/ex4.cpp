@@ -24,10 +24,11 @@ private:
 };
 
 
-struct ComparePersons {
-    bool operator()(const Person* p1, const Person* p2) const {
-        return p1->getAge() < p2->getAge();
-    }
+class ComparePersons {
+    public:
+        bool operator()(const Person* p1, const Person* p2) const {
+            return p1->getAge() < p2->getAge();
+        }
 };
 
 int main() {
@@ -37,7 +38,7 @@ int main() {
     Person person1("mohamed",14);
     Person person2("Alice",33);
     Person person3("John",34);
-    Person person4("Mohamed",18);
+    Person person4("mohamed",14);
     Person person5("Alice",67);
     Person person6("John",66);
 
