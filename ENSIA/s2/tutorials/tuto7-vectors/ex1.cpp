@@ -66,19 +66,22 @@ vector<string> remove_non_digit_string(vector<string> v){
         }
         if(!digit_exist) v.erase(i);
         i++;
-    }while(i!=v.end());
+    }while(i != v.end()+1);
     return v;
 }
 
+
+class student{
+    public:
+
+    private:
+        vector<string> enrolled;
+        
+};
 int main()
 {
-    vector<string> tst{"morocco fel galb", "1. allah", "2. elwatan", "3. elmalik","el amir"};
-    print_vector(tst);
-    cout << endl;
-    tst = remove_non_digit_string(tst);
-    print_vector(tst);
 
-    // vector<int> v{1, 2, 2};
+    // vector<int> v{1, 2, 2}
     // vector<int>::iterator t;
     // print_vector(v);
 
