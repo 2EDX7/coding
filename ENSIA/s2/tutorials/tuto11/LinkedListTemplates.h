@@ -10,18 +10,20 @@ using std::cin;
 using std::cout;
 using std::endl;
 
+template <typename type>
 class LinkedList{
 
     private:
         class Node{
             public:
-                int data;
+                type data;
                 Node* next;
 
-                Node(int d, Node* nextNode=nullptr) {
+                Node(type d, Node* nextNode=nullptr) {
                     data = d;
                     next = nextNode;
-                } ;
+                }
+
                 Node(const Node* node) {
                     data = node->data;
                     next = node->next;
@@ -34,15 +36,15 @@ class LinkedList{
     public:
     
     // default constructor 
-    LinkedList(int data=0){
+    LinkedList(type data=NULL){
         head = new Node(data);
         size = 1;
     };
     
-    //copy constructor
     // copy constructor
     LinkedList(const LinkedList& lst){
         size = lst.size;
+
         head = new Node(lst.head->data);
         Node* original = lst.head->next;
         Node* current = head;
@@ -58,14 +60,14 @@ class LinkedList{
     };
     
     // a new node containing the given data is inserted at the front
-    void add(int data){
+    void add(type data){
         Node* old_head = head;
         head = new Node(data,old_head);
         size++;
     }
 
 
-    void insertAt(int pos, int data){
+    void insertAt(int pos, type data){
         //saving the pointer of the node that will be before the new added node 
         Node* beforeAtPos = head;
 
@@ -104,7 +106,7 @@ class LinkedList{
 
         return false;
     }
-
+    
     void removeAll(){
         Node* current_node = head;
         Node* next_node = nullptr;
