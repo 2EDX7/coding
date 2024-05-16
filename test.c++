@@ -1,12 +1,12 @@
 #include <iostream>
+#include "cp.h"
 using namespace std;
 
-int main(){
-
-    template <typename T> 
-    T fun(T parameter1){
-        cout<<"hello" << parameter1 ; 
-    }
-
+int main()
+{
+    array<int,5> a {1,2,3,5,5};
+    cout<< a.front()<<endl; 
+    cout<<a[2]<<endl;
+    cout<<a.begin();
     return 0;
 }

@@ -5,23 +5,22 @@
 
 class Vector{
     private:
-        int* numOfVectors;
+        int numOfVectors;
         std::vector<double> vector;
 
     public:
-        Vector(int*, std::vector<double> );
+        Vector(int, std::vector<double> );
 
         std::vector<double> getVector() const;
         double getElement(int) const;
-        int* getNumOfVects() const;
+        int getNumOfVects() const;
 
         void setVect(std::vector<double>);
         void setElement(int , double);
 
-        Vector sumVect(const Vector&) const;
-        Vector prodVect(const Vector&) const;
-        Vector minsVect(const Vector&) const;
+        virtual Vector sumVect(const Vector&) const;
+        virtual double prodVect(const Vector&) const;
+        virtual Vector minsVect(const Vector&) const;
 
-        ~Vector();
+        virtual ~Vector() = default;
 };
-

@@ -5,6 +5,6 @@
 #include <vector>
 
 
-class BitVect{
+class BitVect : public Vector{
     
 };
