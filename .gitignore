@@ -1,5 +1,5 @@
 *.exe
 test.cpp
 
-./python
-./kotlin
+./python/*
+./kotlin/*
