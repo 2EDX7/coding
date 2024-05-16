@@ -2,64 +2,68 @@
 #define Queue_h
 
 #include <iostream>
-#include <string>
-#include <array>
+#include <vector>
 
 using std::cout;
-using std::cin;
 using std::endl;
-using std::array;
+using std::vector;
 
-template<typename t>
-class Queue{
+template <typename T>
+class Queue
+{
     public:
-        // constructor with int for the size, and t for the initialization
-        Queue(int size, t initValue) {
-            elements.fill(initValue);
-        }
+        Queue(int size, T initValue) : elements(size, initValue) {}
 
-        void size() const {
-        }
+        void size() const { return elements.size(); }
 
-        void front() const {
-        }
+        void front() const { return elements.front(); }
 
-        void back() const {
-        }
+        void back() const { return elements.back(); }
 
-        bool enqueue(t value) {
-            if (isFull()) return false;
-            elements[last] = value;
-            last = (last + 1) % elements.size();
+        bool enqueue(T value)
+        {
+            elements.push_back(value);
             return true;
         }
 
-        bool dequeue(t& value) {
-            if (isEmpty()) return false;
-
-            value = elements[first];
-            first = (first + 1) % elements.size();
+        bool dequeue(T &value)
+        {
+            if (isEmpty())
+                return false;
+            value = elements.front();
+            elements.erase(elements.begin());
             return true;
         }
 
-        bool setElement(int index, t value) {
-            if (index < 0 || index >= elements.size()) return false;
+        bool setElement(int index, T value)
+        {
+            if (index < 0 || index >= elements.size())
+                return false;
             elements[index] = value;
             return true;
         }
 
-        bool isFull() const {
-            return ((last + 1) % elements.size()) == first;
+        bool isFull() const
+        {
+            return false;
         }
 
-        bool isEmpty() const {
-            return first == last;
+        bool isEmpty() const
+        {
+            return elements.empty();
+        }
+
+        void print() const
+        {
+            for (const auto &elem : elements)
+            {
+                cout << elem << " ";
+            }
+            cout << endl;
         }
 
     private:
-        array<t> elements;
-        int first = 0;
-        int last = 0;
-};
+        vector<T> elements;
 
+};
 #endif
