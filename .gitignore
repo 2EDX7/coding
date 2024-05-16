@@ -1,3 +1,5 @@
 *.exe
 test.cpp
-python_learning/
+
+./python
+./kotlin
