@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <string>
 #include <chrono>  // For measuring time
+#include <cmath>
 
 #define GREEN "\033[32m"
 #define RED "\033[31m"
